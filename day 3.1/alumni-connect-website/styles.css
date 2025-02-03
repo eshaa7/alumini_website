@@ -212,7 +212,7 @@ nav {
 footer {
   background-color: white;
   color: black;
-  padding: 5px 10px;
+  padding: 50px 10px;
   font-size: 0.9em;
   border-top: 1px solid #ddd; /* Subtle border to separate from content */
 }
@@ -233,8 +233,8 @@ footer {
 }
 
 .footer-left img {
-  width: 120px; /* Adjust size as needed */
-  height: 120px;
+  width: 175px; /* Adjust size as needed */
+  height: auto;
 }
 
 /* Middle Section */
@@ -758,4 +758,34 @@ footer {
   line-height: 1.6;
   font-size: 1.1rem;
   color: #333;
+}
+
+/* Blog Header */
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Add Blog Button */
+.add-blog-button {
+  background-color: #000000; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-blog-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift */
+}
+
+.add-blog-button:active {
+  transform: translateY(0); /* Reset on click */
 }
