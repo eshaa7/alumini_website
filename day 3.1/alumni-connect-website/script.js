@@ -32,3 +32,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Add to script.js
+document.addEventListener('DOMContentLoaded', function() {
+  // Password toggle functionality
+  document.querySelectorAll('.password-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function() {
+          const passwordInput = this.parentElement.querySelector('input');
+          const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+          passwordInput.setAttribute('type', type);
+          this.classList.toggle('fa-eye-slash');
+          this.classList.toggle('fa-eye');
+      });
+  });
+
+  // Form submission
+  document.getElementById('signinForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Basic validation
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if (!validateEmail(email)) {
+          alert('Please enter a valid email');
+          return;
+      }
+
+      if (password.length < 8) {
+          alert('Password must be at least 8 characters');
+          return;
+      }
+
+      // Add your actual authentication logic here
+      console.log('Submitting form:', { email, password });
+      // window.location.href = 'dashboard.html';
+  });
+
+  function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email) && email.endsWith('.edu');
+  }
+});

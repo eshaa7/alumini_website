@@ -64,7 +64,7 @@ body {
     display: flex;
     justify-content: flex-end; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height for centering */
+    height: 110vh; /* Full viewport height for centering */
     padding: 0 20px; /* Add padding for smaller screens */
 }
 
@@ -289,7 +289,7 @@ body {
 footer {
     background-color: white;
     color: black;
-    padding: 50px 10px;
+    padding: 5px 10px;
     font-size: 0.9em;
     border-top: 1px solid #ddd; /* Subtle border to separate from content */
   }
