@@ -1,0 +1,75 @@
+/* Updated styles.css with fixed header and footer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EDF2F4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 30px;
+    background-color: #8D99AE;
+    color: white;
+    z-index: 1000;
+}
+
+.logo {
+    height: 70px;
+    margin: 0px 0px 0px 0px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.register-btn {
+    padding: 8px 15px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: 80px; /* Adjusted for fixed header */
+}
+
+.club-logo {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+    padding: 15px;
+    background-color: #2B2D42;
+    color: white;
+}

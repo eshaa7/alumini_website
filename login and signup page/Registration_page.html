@@ -15,7 +15,7 @@
             <a href="#">About</a>
             <a href="#">Blogs</a>
             <a href="#">FAQ</a>
-            <button class="register-btn">Register</button>
+            <button class="register-btn">Signin</button>
         </nav>
     </header>
     <div class="outer-container">
@@ -24,13 +24,15 @@
                 <img src="cyseclogo.png" alt="Website Representation" />
             </div>
             <div class="container">
-                <h1>Login to your account</h1>
+                <h1>Create an Account</h1>
                 <form>
-                    <br>
-                    <br>
                     <div class="form-group">
-                        <label for="username">Username or Mail ID</label>
+                        <label for="username">Username</label>
                         <input type="text" id="username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
@@ -38,10 +40,9 @@
                     </div>
                     <div class="form-options">
                         <label><input type="checkbox" id="remember"> Remember me</label>
-                        <a href="#" class="forgot-password">Forgot Password?</a>
+                        <a href="#" class="forgot-password">Already have an account?</a>
                     </div>
-                    <button type="submit" class="btn">Sign In</button>
-                    <a href="#" id="newUser" class="new-user-link">New User? Register</a>
+                    <button type="submit" class="btn">Sign Up</button>
                 </form>
             </div>
         </div>
@@ -49,7 +50,6 @@
     <footer>
         <p>@DEPARTMENT OF CSE CYBER SECURITY     |    DAYANANDA SAGAR UNIVERSITY</p>
     </footer>
-    
-    <script src="scriptsignin.js"></script> <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
