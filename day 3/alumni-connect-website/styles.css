@@ -23,6 +23,19 @@ nav {
 .logo img {
   height: 65px;
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.primary-logo, .secondary-logo {
+  height: 50px; 
+}
+.secondary-logo {
+  margin-left: 25px;
+}
+
 
 .nav-links {
   list-style: none;
