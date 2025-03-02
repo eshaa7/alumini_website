@@ -54,7 +54,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
-    background: url("M.jpg") no-repeat center center fixed; /* Replace 'your-image-path.jpg' with the actual image URL or file path */
+    background: url("./assets/M.jpg") no-repeat center center fixed; /* Replace 'your-image-path.jpg' with the actual image URL or file path */
     background-size: cover;
     color: #1a1a1a;
   }
